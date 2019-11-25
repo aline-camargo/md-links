@@ -1,0 +1,12 @@
+{
+  "name": "linksmd",
+  "version": "1.0.0",
+  "description": "Encontra links em arquivos md",
+  "keywords": ["node", "markdown"],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
