@@ -14,11 +14,17 @@
   },
   "author": "aline-camargo",
   "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  },
   "devDependencies": {
     "eslint": "^6.7.1",
-    "jest": "^24.9.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.1.2"
+    "eslint-plugin-jest": "^22.1.2",
+    "jest": "^24.9.0"
+  },
+  "bin": {
+    "md-links": "cli.js"
   }
 }
