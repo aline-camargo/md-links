@@ -55,10 +55,12 @@ http://google.com/ 301 Google
 ### Tecnologias e bibliotecas utilizadas
 
 * [Node.js](https://nodejs.org/)
-* [fs](https://nodejs.org/api/fs.html)
-* [node-fetch](https://www.npmjs.com/package/node-fetch)
 * [yargs](https://www.npmjs.com/package/yargs)
 * [chalk](https://www.npmjs.com/package/chalk)
+* [fs](https://nodejs.org/api/fs.html)
+* [node-fetch](https://www.npmjs.com/package/node-fetch)
+* [eslint](https://eslint.org/)
+* [jest](https://jestjs.io/)
 
 ### Arquivos do Projeto
 
