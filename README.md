@@ -17,11 +17,11 @@ $ sudo npm install -g aline-camargo/SAP003-md-links
 
 ## Como usar
 
-Para fazer uma simples listagem digite no console:
+#### Para fazer uma simples listagem, digite no console:
 
     $ md-links caminho/do/arquivo.md
 
-#### Retorno esperado
+Retorno esperado
 
 
 ```console
@@ -31,7 +31,7 @@ https://outra-coisa-.net/algum-doc.html algum doc
 http://google.com/ Google
 ```
 
-Para verificar a validade dos links:
+#### Para verificar a validade dos links:
 
     $ md-links caminho/do/arquivo.md -v
 
@@ -39,7 +39,7 @@ ou
 
     $ md-links caminho/do/arquivo.md  --validate
 
-#### Retorno esperado
+Retorno esperado
 
 
 ```console
