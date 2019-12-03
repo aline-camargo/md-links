@@ -17,6 +17,23 @@ $ sudo npm install -g aline-camargo/SAP003-md-links
 
 ## Como usar
 
+### No seu projeto JavaScript
+
+Para utilizar a biblioteca em um projeto JavaScript, faça o `require` no arquivo desejado. Dessa forma:
+
+```js
+const mdLinks = require(".caminho-da-pasta-de-instalação/lib/index.js");
+
+mdLinks("./example.md")
+  .then(links => {
+    // => [{ href, text }]
+  })
+  .catch(console.error);
+```
+
+### CLI (Command Line Interface - Interface de Linha de Comando)
+#### Para fazer uma simples listagem:
+
 #### Para fazer uma simples listagem, digite no console:
 
     $ md-links caminho/do/arquivo.md
