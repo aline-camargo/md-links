@@ -1,6 +1,6 @@
 # Markdown Links
 
-> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) que retorna uma lista dos links contidos em um arquivo Markdown(.md).
+> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) que retorna uma lista dos links contidos em um arquivo Markdown(.md) e pode verificar a validade dos mesmos.
 
 ## Como instalar
 
@@ -24,17 +24,15 @@ Para utilizar a biblioteca em um projeto JavaScript, faça o `require` no arquiv
 ```js
 const mdLinks = require(".caminho-da-pasta-de-instalação/lib/index.js");
 
-mdLinks("./example.md")
+mdLinks("./exemplo.md", { validate: true })
   .then(links => {
-    // => [{ href, text }]
+    // => [{ href, text, status }]
   })
   .catch(console.error);
 ```
 
 ### CLI (Command Line Interface - Interface de Linha de Comando)
 #### Para fazer uma simples listagem:
-
-#### Para fazer uma simples listagem, digite no console:
 
     $ md-links caminho/do/arquivo.md
 
