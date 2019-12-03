@@ -26,7 +26,11 @@ const mdLinks = require(".caminho-da-pasta-de-instalação/lib/index.js");
 
 mdLinks("./exemplo.md", { validate: true })
   .then(links => {
-    // => [{ href, text, status }]
+    if(validate) {
+      // => [{ href, text, status }]
+    } else {
+      // => [{ href, text }]
+    }
   })
   .catch(console.error);
 ```
