@@ -1,6 +1,6 @@
 # Markdown Links
 
-> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) para ler arquivos Markdown(.md) e retornar uma lista dos links contidos no mesmo.
+> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) que retorna uma lista dos links contidos em um arquivo Markdown(.md).
 
 ## Como instalar
 
