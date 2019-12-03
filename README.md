@@ -1,6 +1,6 @@
 # Markdown Links
 
-> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) que retorna uma lista dos links contidos em um arquivo Markdown(.md).
+> Biblioteca que oferece uma CLI (Command Line Interface - Interface de Linha de Comando) que retorna uma lista dos links contidos em um arquivo Markdown(.md) e pode verificar a validade dos mesmos.
 
 ## Como instalar
 
@@ -17,7 +17,26 @@ $ sudo npm install -g aline-camargo/SAP003-md-links
 
 ## Como usar
 
-#### Para fazer uma simples listagem, digite no console:
+### No seu projeto JavaScript
+
+Para utilizar a biblioteca em um projeto JavaScript, faça o `require` no arquivo desejado. Dessa forma:
+
+```js
+const mdLinks = require(".caminho-da-pasta-de-instalação/lib/index.js");
+
+mdLinks("./exemplo.md", { validate: true })
+  .then(links => {
+    if(validate) {
+      // => [{ href, text, status }]
+    } else {
+      // => [{ href, text }]
+    }
+  })
+  .catch(console.error);
+```
+
+### CLI (Command Line Interface - Interface de Linha de Comando)
+#### Para fazer uma simples listagem:
 
     $ md-links caminho/do/arquivo.md
 
@@ -55,10 +74,12 @@ http://google.com/ 301 Google
 ### Tecnologias e bibliotecas utilizadas
 
 * [Node.js](https://nodejs.org/)
-* [fs](https://nodejs.org/api/fs.html)
-* [node-fetch](https://www.npmjs.com/package/node-fetch)
 * [yargs](https://www.npmjs.com/package/yargs)
 * [chalk](https://www.npmjs.com/package/chalk)
+* [fs](https://nodejs.org/api/fs.html)
+* [node-fetch](https://www.npmjs.com/package/node-fetch)
+* [eslint](https://eslint.org/)
+* [jest](https://jestjs.io/)
 
 ### Arquivos do Projeto
 
