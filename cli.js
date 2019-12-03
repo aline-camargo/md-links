@@ -21,16 +21,9 @@ mdLinks(path, option)
   .then((response) => {
     response.forEach((element) => {
       if (option) {
-        console.log(
-          chalk.blue(element.href),
-          chalk.yellow(element.status),
-          element.text.substring(0, 50),
-        );
+        console.log(chalk.blue(element.href), chalk.yellow(element.status), element.text);
       } else {
-        console.log(
-          chalk.blue(element.href),
-          element.text.substring(0, 50),
-        );
+        console.log(chalk.blue(element.href), element.text);
       }
     });
   })
