@@ -1,10 +1,9 @@
 #!/usr/bin/env node
-const chalk = require('chalk')
-const yargs = require('yargs')
-const mdLinks = require('./lib/index.js')
+import chalk from 'chalk'
+import yargs from 'yargs'
+import mdLinks from './lib/index.js'
 
-const argv = yargs
-  .command('md-links', 'Busca links em arquivos .md')
+const argv = yargs().command('md-links', 'Busca links em arquivos .md')
   .option('validate', {
     alias: 'v',
     description: 'Retorna o código de status da requisição do link',

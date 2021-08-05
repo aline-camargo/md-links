@@ -7,6 +7,7 @@
     "markdown"
   ],
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest --coverage --watchAll",
     "eslint": "eslint --ext .js lib/",
