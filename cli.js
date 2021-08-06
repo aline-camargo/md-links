@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import chalk from 'chalk'
 import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 import mdLinks from './lib/index.js'
 
-const argv = yargs().command('md-links', 'Busca links em arquivos .md')
+const argv = yargs(hideBin(process.argv)).command('md-links', 'Busca links em arquivos .md')
   .option('validate', {
     alias: 'v',
     description: 'Retorna o código de status da requisição do link',
