@@ -9,7 +9,7 @@
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --coverage --watchAll",
+    "test": " NODE_OPTIONS=--experimental-vm-modules jest --coverage --watchAll",
     "eslint": "eslint --ext .js lib/",
     "pretest": "npm run eslint"
   },

@@ -16,16 +16,20 @@ const argv = yargs().command('md-links', 'Busca links em arquivos .md')
 const option = argv.validate
 const path = process.argv[2]
 
-mdLinks(path, option)
-  .then((response) => {
+async function init() {
+  try {
+    const response = await mdLinks(path, option)
+
     response.forEach((element) => {
       if (option) {
-        console.log(chalk.blue(element.href), chalk.yellow(element.status), element.text)
+        console.info(chalk.cyan(element.href), chalk.yellow(element.status), element.text)
       } else {
-        console.log(chalk.blue(element.href), element.text)
+        console.info(chalk.cyan(element.href), element.text)
       }
     })
-  })
-  .catch((err) => {
-    console.log(chalk.red(err))
-  })
+  } catch(err) {
+    console.error(chalk.red(`Erro: ${err}`))
+  }
+}
+
+init()
